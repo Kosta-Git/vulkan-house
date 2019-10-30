@@ -4,7 +4,7 @@
 #include "submodules/tiny_obj_loader/tiny_obj_loader.h"
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "submodules/stb/stb_image.h"
+#include "submodules/stb-lib/stb_image.h"
 
 const char* FRAG = "triangle.frag.spv";
 const char* VERT = "triangle.vert.spv";
