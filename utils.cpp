@@ -19,8 +19,8 @@ VkPhysicalDevice Utils::GetBestPhysicalDevice( VkInstance instance ) {
 
     switch ( props.deviceType ) {
       case VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU:
-        return devices[ i ];
-          //devicePoints[i] = 1000;
+        //return devices[ i ];
+        devicePoints[i] = 1000;
         break;
       case VK_PHYSICAL_DEVICE_TYPE_CPU:
         devicePoints[i] = 500;

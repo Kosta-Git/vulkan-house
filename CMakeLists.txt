@@ -54,7 +54,7 @@ endif( WIN32 )
 
 if( NOT WIN32 )
   if( EXISTS "${CMAKE_CURRENT_LIST_DIR}/ressources/SPIR_V_COMPILE.sh" )
-    add_custom_command( TARGET ${PROJECT_NAME} PRE_BUILD COMMAND /usr/local/bin/zsh ${CMAKE_CURRENT_LIST_DIR}/ressources/SPIR_V_COMPILE.sh ${CMAKE_CURRENT_LIST_DIR} )
+    add_custom_command( TARGET ${PROJECT_NAME} PRE_BUILD COMMAND /usr/bin/zsh ${CMAKE_CURRENT_LIST_DIR}/ressources/SPIR_V_COMPILE.sh ${CMAKE_CURRENT_LIST_DIR} )
   else()
     message( WARNING "SPIR_V_COMPILE.bat not found. Please manual compile your shaders" )
   endif()
